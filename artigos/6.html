@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Moonlight</title>
+</head>
+
+<script src="../database.js"></script>
+<script>
+    const NomeArtigo = artigos[parseInt(window.location.href.split("artigos")[1].split(".")[0][1])]
+    document.getElementsByTagName("title")[0].innerHTML = NomeArtigo + " - Projeto Moonlight"
+</script>
+
+<link rel="stylesheet" href="../styles.css">
+
+<link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+<link rel="manifest" href="../favicon/site.webmanifest">
+
+<body>  
+    <iframe height="510" src="../header.html" frameborder="0" style="width: 100%;"></iframe>
+    <br>
+    <h1>Cheat Engine e seu potencial escondido</h1>
+    <br>
+    <p>
+        <p style="font-weight: 1000;font-size: x-large;">I. Do que estamos falando?</p><br><br>
+        Cheat Engine (CE) &eacute; um programa cujo prop&oacute;sito principal &eacute; permitir o usu&aacute;rio trapacear em jogos, obtendo mais pontos, vida, ou outra coisa.<br><br>
+        <img src="../imagens/art4_1.png" style="border: 2px solid rgba(0, 0, 0, 0);border-radius: 25px;width: 60%;height: 60%;"><br>
+        Cheat Engine sendo usado para obter moedas m&aacute;ximas no jogo Plants vs Zombies (Fonte: Youtube)<br><br>
+        Mas talvez quando voc&ecirc; era crian&ccedil;a, simplesmente usava o programa, n&atilde;o sabia o que fazia, e ao ficar mais velho esqueceu dele completamente. Bem, nesse artigo voc&ecirc; vai compreender o que o Cheat Engine faz e como ele pode ser usado para muito mais do que apenas trapacear.<br><br>
+        <hr><br><br>
+        <p style="font-weight: 1000;font-size: x-large;">II. Come&ccedil;ando simples</p><br><br>
+        Antes de tudo, <a href="http://www.cheatengine.org/">Baixe e instale o Cheat Engine.</a><br><br>
+        Para o prop&oacute;sito desse artigo, o jogo usado ser&aacute; o cl&aacute;ssico Plants vs Zombies, caso n&atilde;o o conhe&ccedil;a, leia um pouco sobre ele e como se joga para entender o que acontecerá durante o progresso desse artigo.<br>
+        Caso n&atilde;o tenha o jogo, compre-o na Steam, Origin, ou a vers&atilde;o em caixa em segunda m&atilde;o.<br>
+        <p style="font-size: xx-small;opacity: 0.1;">Psst! Caso n&atilde;o queira comprar o jogo, ele est&aacute; <a href="https://docs.google.com/document/d/1kf3mUKssw3LKapwB-t9Lh4Qs5GjjaVJZ8cZ6H_u6a5M">aqui</a>. Mas ter&aacute; que procurar por ele.</p><br><br>
+        Abra o jogo e o Cheat Engine e siga o passo a passo abaixo:<br><br>
+        1. Clique no &iacute;cone de um monitor com uma lupa no canto superior esquerdo do Cheat Engine.<br>
+        2. Selecione o processo chamado "PlantsVsZombies.exe".<br>
+        3. Estando em um n&iacute;vel qualquer no jogo, digite a quantidade de s&oacute;is que voc&ecirc; tem no momento no campo "Value" na direita, e clique em "First Scan".<br>
+        4. Volte ao jogo e mude a quantidade de s&oacute;is, seja comprando plantas ou ganhando mais s&oacute;is.<br>
+        5. Digite a nova quantidade de s&oacute;is e clique em "Next Scan".<br>
+        6. Repita os passos 4 e 5 at&eacute; a tabela do lado esquerdo estiver com apenas 1, 2, ou 3 entradas.<br>
+        7. Selecione as entradas da tabela com o CTRL e clique na seta vermelha abaixo da tabela.<br>
+        8. Na tabela de baixo, para cada entrada que estiver nela, clique duas vezes no valor na coluna "Value" e mude o valor para qualquer um.<br>
+        9. Se nada ocorrer, remova a entrada com o DELETE, se a quantidade de s&oacute;is mudar dentro do jogo, remova todas as outras entradas que tiver.<br><br>
+        O resultado ser&aacute; um valor que, quando alterado, muda a quantidade de s&oacute;is que voc&ecirc; tiver no n&iacute;vel (se aplica apenas ao n&iacute;vel atual).<br><br>
+        <img src="../imagens/art4_2.png" style="border: 2px solid rgba(0, 0, 0, 0);border-radius: 25px;width: 60%;height: 60%;"><br>
+        Resultado do passo a passo.<br><br>
+        <hr><br><br>
+        <p style="font-weight: 1000;font-size: x-large;">III. O tal potencial</p><br><br>
+        Não vamos entrar muito a fundo em engenharia reversa ou sobre a memória de um computador. Mas o que você precisa saber é que todo programa de computador tem endereços de memória, onde ficam o código-fonte e todas as informações do jogo.<br>
+        O que acabamos de fazer foi encontrar o endereço de memória onde está armazenado os sóis e modificamos ele para termos mais sóis no nível atual. Você pode fazer isso com todo tipo de valor que existe no jogo:<br><br>
+        <a href="https://docs.google.com/document/d/1kf3mUKssw3LKapwB-t9Lh4Qs5GjjaVJZ8cZ6H_u6a5M">Veja aqui todos os endereços de memória para o jogo original (versão de varejo)</a><br>
+        <a href="https://docs.google.com/document/d/1MaZIVD4MmJF864rGX4cyS2U1VvJFD_TWimGBaMGfoJU">Veja aqui todos os endereços de memória para a versão da Steam (GOTY)</a><br><br>
+    </p>
+</body>
+</html>

@@ -1,0 +1,55 @@
+Astronomia:
+-Teorias do fim do universo
+-Telescópio James Webb: as grandes descobertas
+
+Química Quântica:
+-Partículas sub-atômicas
+
+Física:
+-Câmara escura de orifício
+
+Programação:
+-Introdução ao Python
+-Introdução ao Batch
+
+Gaming e Modding:
+-Jogos grátis: uma lista extensiva
+-Jogos Flash e onde se esconderam
+-Cheat Engine e seu potencial escondido (Em produção)
+-GTA San Andreas: os mods que você precisa
+-GTA San Andreas: introdução ao CLEO
+-GTA Vice City: os mods que você precisa
+-Minecraft: criando um servidor pc-celular
+
+História da Computação:
+-EMachines: a Positivo dos anos 90 (nos EUA)
+-America Online: A gigante da internet discada
+-MS-DOS: o "antecessor" do Windows
+
+Arte, Design e Animação Digital:
+-Introdução ao GIMP
+-Introdução ao Adobe Flash (mas sem o Flash)
+-Introdução ao Blender
+-Deviantart: o centro de tudo
+
+Vídeos: criação e publicação:
+-Introdução ao OBS
+-Introdução ao Windows Movie Maker (Feito)
+-Introdução ao Shotcut
+-Introdução ao Youtube
+-Introdução ao Odysee
+
+Computação:
+-Windows 11: dane-se os requerimentos
+-Todos os Windows, onde encontrar
+-Ninite: a primeira coisa antes de tudo (Feito)
+-Office vs LibreOffice: disputa acirrada
+
+História da Humanidade:
+-A Guerra do Futebol (1969) (Feito)
+
+Filosofia:
+-John Locke: vida e obras (Em produção)
+
+TV e Mídias Digitais:
+-TV Grátis e online: emissoras conhecidas (Feito)

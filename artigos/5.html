@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Moonlight</title>
+</head>
+
+<script src="../database.js"></script>
+<script>
+    const NomeArtigo = artigos[parseInt(window.location.href.split("artigos")[1].split(".")[0][1])]
+    document.getElementsByTagName("title")[0].innerHTML = NomeArtigo + " - Projeto Moonlight"
+</script>
+
+<link rel="stylesheet" href="../styles.css">
+
+<link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+<link rel="manifest" href="../favicon/site.webmanifest">
+
+<body>  
+    <iframe height="510" src="../header.html" frameborder="0" style="width: 100%;"></iframe>
+    <br>
+    <h1>John Locke: sua vida e pensamentos</h1>
+    <br>
+    <p>
+        <p style="font-weight: 1000;font-size: x-large;">I. Vida</p><br><br>
+        John Locke nasceu em 29 de Agosto de 1632 na cidade inglesa de Wrington, Somerset, sendo filho de um capit&atilde;o da cavalaria parlamentar. Entrou para a Christ Church College da Universidade de Oxford, se formando em 1656 e conseguindo mestrado em 1658
+    </p>
+</body>
+</html>

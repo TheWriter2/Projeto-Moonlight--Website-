@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Moonlight</title>
+</head>
+
+<linK rel="stylesheet" href="./styles.css">
+
+<link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+<link rel="manifest" href="./favicon/site.webmanifest">
+
+<body>  
+    <iframe height="510" src="./header.html" frameborder="0" style="border-radius: 25px;width: 100%;"></iframe>
+    <br>
+    <div id="pesquisas">
+
+    </div>
+</body>
+
+<script src="./database.js"></script>
+
+<script>
+    const siteParams = new URLSearchParams(window.location.search);
+    const termopesquisa = siteParams.get("id");
+
+    var termos = new RegExp(termopesquisa, "i");
+
+    var listadepesquisa = [];
+
+    for (i = 1;i < artigos.length;i++) {
+        if (artigos[i].search(termos) != -1) {
+            listadepesquisa.push(i);
+            continue;
+        }
+    }
+
+    var elemento;
+    var elemento2;
+
+    for (i = 0;i < listadepesquisa.length;i++) {
+        elemento = document.createElement("a");
+        elemento.setAttribute("href", "./artigos/" + listadepesquisa[i] + ".html");
+        elemento2 = document.createElement("img");
+        elemento2.setAttribute("src", "./imagens/art" + listadepesquisa[i] + "_logo.png");
+        elemento2.setAttribute("width", "768");
+        elemento2.setAttribute("height", "150");
+        elemento2.setAttribute("style", "border: 2px solid rgba(0, 0, 0, 0);border-radius: 25px;");
+        elemento.appendChild(elemento2);
+        document.getElementById("pesquisas").append(elemento);
+        elemento = document.createElement("br");
+        document.getElementById("pesquisas").append(elemento);
+    }
+
+</script>
+
+<script src="./pesquisar.js"></script>
+
+</html>
